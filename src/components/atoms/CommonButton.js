@@ -6,6 +6,7 @@ const CommonButton = forwardRef(({
   Icon, 
   children, 
   variant = "default", 
+  onPress,
   ...props 
 }, ref) => {
   const buttonClass = `${styles.customButton} ${styles[`variant-${variant}`]} ${styles[`icon-position-${iconPosition}`]}`;
@@ -15,6 +16,7 @@ const CommonButton = forwardRef(({
       ref={ref}
       className={buttonClass}
       {...props}
+      onClick={onPress}
     >
       {iconPosition === "left" && Icon && <Icon className={styles.icon} />}
       <span className={styles.text}>{children}</span>

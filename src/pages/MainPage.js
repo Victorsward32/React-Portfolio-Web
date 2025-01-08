@@ -49,7 +49,7 @@ const MainPage = () => {
             </a>
           </div>
           <div className={styles.heroButtons}>
-            <button className={styles.hireMeButton} >Hire Me</button>
+            <button className={styles.hireMeButton}  onClick={()=>{handleWhatsApp()}}>Hire Me</button>
             <button className={styles.downloadCVButton} onClick={() => {
               handleDownloadCV()
             }} >Download CV</button>

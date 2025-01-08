@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './NavBar.module.css';
 import CommonButton from '../atoms/CommonButton';
+import { handleWhatsApp } from '../../utils/utils';
 
 const NavBar = ({
   OnPressHome,
@@ -11,7 +12,7 @@ const NavBar = ({
 }) => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>All in one service</div>
+      <div className={styles.logo}>Devropix</div>
       <ul className={styles.navLinks}>
         <li><a onClick={() => { OnPressHome(); }} className={styles.link}>Home</a></li>
         <li><a onClick={() => { OnPressServices(); }} className={styles.link}>Services</a></li>
@@ -20,7 +21,7 @@ const NavBar = ({
         <li><a onClick={() => { OnPressContactMe(); }} className={styles.link}>Contact Me</a></li>
       </ul>
       <div className={styles.buttonWrapper}>
-        <CommonButton variant="default" iconPosition="right">
+        <CommonButton variant="default" iconPosition="right" onPress = {()=>{handleWhatsApp()}}>
           Hire Me
         </CommonButton>
       </div>
