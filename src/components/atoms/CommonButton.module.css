@@ -1,0 +1,58 @@
+.customButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.customButton:hover {
+    opacity: 0.9;
+}
+
+.customButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.text {
+    margin: 0 0.25rem;
+}
+
+/* Variants */
+.variant-default {
+    background-color: #FD6F00;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.variant-outline {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.variant-secondary {
+    background-color: #f3f4f6;
+    color: #000;
+    border: 1px solid #f3f4f6;
+}
+
+/* Icon positions */
+.icon-position-left .icon {
+    margin-right: 0.5rem;
+}
+
+.icon-position-right .icon {
+    margin-left: 0.5rem;
+}

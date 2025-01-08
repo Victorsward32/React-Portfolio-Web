@@ -1,0 +1,55 @@
+.footer {
+  background-color: #121212;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.socialIcons a {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  background-color: #ff6b00;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.contact h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.developer h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #ff6b00;
+}
+
+.developer a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.developer a:hover {
+  color: white;
+}
